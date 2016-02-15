@@ -1,0 +1,36 @@
+NRJR 	HN: Real households disposable income: CVM SA £m
+http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=NRJR&dataset=ukea&table-id=XS1
+http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=ukea&cdid=NRJR
+
+"Table 5: Households by size"
+"United Kingdom, 2001-2010"
+http://www.ons.gov.uk/ons/datasets-and-tables/index.html?pageSize=50&sortBy=none&sortDirection=none&newquery=%22average+household+size%22
+http://www.ons.gov.uk/ons/rel/family-demography/families-and-households/2001-to-2010/families-and-households-data-tables.xls
+actually familieshousehold_tcm77-229739.xls
+
+"Table 401: Household projections, United Kingdom, 1961-2037"
+https://www.gov.uk/government/statistical-data-sets/live-tables-on-household-projections
+https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/407641/Household_Projections_Published_Tables.ods
+actually displayed online with the correct file name
+
+"Table A44"
+"Income and source of income"
+"UK, 1970 to 2014"
+http://www.ons.gov.uk/ons/rel/family-spending/family-spending/2015-edition/rft-a44.xls
+actually a44final2014_tcm77-423519.xls
+
+http://www.lse.ac.uk/socialPolicy/Researchcentresandgroups/BSPS/dayMeetings/Explaining-changes-in-family-size.pdf
+
+"Figure 15: Average household size (number of people per household), Scotland, 1961 to 2011"
+http://www.scotlandscensus.gov.uk/bulletin-figures-and-tables
+http://www.scotlandscensus.gov.uk/documents/censusresults/release1b/rel1bfig15.csv
+accurately named file online
+
+http://www.nisra.gov.uk/archive/demography/population/household/household_project.pdf
+
+"Usually Resident Population, Households and Average Household Size (administrative geographies)"
+http://www.ninis2.nisra.gov.uk/public/PivotGrid.aspx?ds=4246&lh=73&yn=2011&sk=136&sn=Census%202011&yearfilter=2037
+
+"Figure 2: Mid-year population estimates and annual change for the UK mid-1964 onwards"
+http://www.ons.gov.uk/ons/rel/pop-estimate/population-estimates-for-uk--england-and-wales--scotland-and-northern-ireland/2013/sty-population-changes.html
+http://www.ons.gov.uk/ons/rel/pop-estimate/population-estimates-for-uk--england-and-wales--scotland-and-northern-ireland/2013/chd-1-for-story.xls

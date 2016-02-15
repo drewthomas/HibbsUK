@@ -1,0 +1,84 @@
+# A manually unified data file of household count and mean size in the UK
+# and various subsets of the UK, patched together from several online
+# government data files:
+#
+# [1] https://www.gov.uk/government/statistical-data-sets/live-tables-on-household-projections
+# [2] http://www.ons.gov.uk/ons/rel/family-demography/families-and-households/2001-to-2010/families-and-households-data-tables.xls
+# [3] http://www.ons.gov.uk/ons/rel/family-spending/family-spending/2015-edition/rft-a44.xls
+# [4] http://www.scotlandscensus.gov.uk/documents/censusresults/release1b/rel1bfig15.csv
+# [5] https://statswales.wales.gov.uk/Catalogue/Housing/Households/Estimates/AverageHouseholdSize-by-LocalAuthority-Year
+# [6] http://www.nisra.gov.uk/archive/demography/population/household/household_project.pdf
+# [7] http://www.ninis2.nisra.gov.uk/public/PivotGrid.aspx?ds=4246&lh=73&yn=2011&sk=136&sn=Census%202011&yearfilter=2037
+#
+# A seemingly useful source for UK & Welsh mean household size was
+# 	[8] https://books.google.co.uk/books?id=2C4tAAAAMAAJ&q=Wales+"household+size"+1981&dq=Wales+"household+size"+1981&hl=en&sa=X [K. D. George & Lynn Mainwaring [eds.], The Welsh Economy, University of Wales Press, 1988, p.57]
+# which gives 2.72 & 2.75 as the UK & Welsh 1981 means respectively.
+# But it doesn't mesh with the other statistics, so I leave it out.
+#
+# Notice that there aren't any quarterly figures on this. The key source of
+# data here basically seems to be census data, so presumably no one bothers
+# to interpolate quarterly since a decadal census has such poor temporal
+# resolution. Even nowadays (Feb. 2016) only England & Wales maintain
+# separate annual mean-household-size time series!
+#
+# YR: year
+# NE: no. of English households in thousands [1]
+# NW: no. of Welsh households in thousands [1]
+# NS: no. of Scottish households in thousands [2]
+# NNI: no. of Northern Irish households in thousands [2]
+# NUK1: no. of UK households in thousands [1]
+# NUK2: no. of UK households in thousands [2]
+# NUK3: no. of UK households in thousands [3]
+# SE: average English household size [1]
+# SW: average Welsh household size [5]
+# SS: average Scottish household size [4]
+# SNI: average Northern Irish household size [6, 7]
+# SUK: average UK household size [2]
+YR	NE	NW	NS	NNI	NUK1	NUK2	NUK3	SE	SW	SS	SNI	SUK
+1961	13915	785	1570	353	16623	NA	NA	3.01	NA	3.19	3.70	NA
+1971	16012	928	1686	389	19015	NA	NA	2.84	NA	3.00	3.49	NA
+1972	16107	931	NA	NA	NA	NA	NA	2.85	NA	NA	NA	NA
+1973	16251	943	NA	NA	NA	NA	NA	2.83	NA	NA	NA	NA
+1974	16352	954	NA	NA	NA	NA	NA	2.81	NA	NA	NA	NA
+1975	16455	963	NA	NA	NA	NA	NA	2.79	NA	NA	NA	NA
+1976	16561	972	NA	NA	NA	NA	NA	2.78	NA	NA	NA	NA
+1977	16680	980	NA	NA	NA	NA	NA	2.76	NA	NA	NA	NA
+1978	16800	989	NA	NA	NA	NA	NA	2.74	NA	NA	NA	NA
+1979	16929	998	NA	NA	NA	NA	NA	2.72	NA	NA	NA	NA
+1980	17068	1007	NA	NA	NA	NA	NA	2.70	NA	NA	NA	NA
+1981	17362	1025	1786	456	20629	NA	NA	2.65	NA	2.77	3.20	NA
+1982	17453	1028	NA	NA	NA	NA	NA	2.63	NA	NA	NA	NA
+1983	17585	1033	NA	NA	NA	NA	NA	2.62	NA	NA	NA	NA
+1984	17757	1042	NA	NA	NA	NA	NA	2.60	NA	NA	NA	NA
+1985	17942	1053	NA	NA	NA	NA	NA	2.58	NA	NA	NA	NA
+1986	18131	1065	NA	NA	NA	NA	NA	2.56	NA	NA	NA	NA
+1987	18335	1079	NA	NA	NA	NA	NA	2.53	NA	NA	NA	NA
+1988	18551	1097	NA	NA	NA	NA	NA	2.51	NA	NA	NA	NA
+1989	18778	1113	NA	NA	NA	NA	NA	2.49	NA	NA	NA	NA
+1990	18970	1124	NA	NA	NA	NA	NA	2.47	NA	NA	NA	NA
+1991	19166	1113	2043	541	22863	NA	NA	2.45	2.52	2.44	2.93	NA
+1992	19284	1124	2059	NA	NA	NA	NA	2.44	NA	NA	NA	NA
+1993	19391	1134	2076	NA	NA	NA	NA	2.44	NA	NA	NA	NA
+1994	19494	1144	2094	NA	NA	NA	NA	2.43	NA	NA	NA	NA
+1995	19630	1153	2112	NA	NA	NA	NA	2.42	NA	NA	NA	NA
+1996	19756	1162	2126	NA	NA	NA	NA	2.41	2.44	NA	NA	NA
+1997	19874	1172	2139	NA	NA	NA	NA	2.40	NA	NA	NA	NA
+1998	20000	1183	2153	NA	NA	NA	24660	2.40	NA	NA	NA	NA
+1999	20156	1191	2166	NA	NA	NA	25340	2.39	NA	NA	NA	NA
+2000	20335	1202	2177	NA	NA	NA	25030	2.38	NA	NA	NA	NA
+2001	20523	1212	2195	627	24558	24535	24450	2.37	2.36	2.27	2.65	2.38
+2002	20646	1223	2211	NA	NA	24772	24350	2.36	NA	NA	NA	2.36
+2003	20762	1234	2230	NA	NA	24874	24670	2.36	NA	NA	NA	2.36
+2004	20876	1248	2249	NA	NA	24932	24430	2.36	NA	NA	NA	2.37
+2005	21064	1257	2271	NA	NA	25125	24800	2.36	NA	NA	NA	2.36
+2006	21221	1269	2291	NA	NA	25258	25115	2.36	2.34	NA	NA	2.37
+2007	21382	1283	2314	NA	NA	25462	25350	2.36	2.33	NA	NA	2.36
+2008	21568	1296	2332	689	25885	25688	25690	2.36	2.33	NA	NA	2.36
+2009	21736	1308	2345	697	26086	25837	25980	2.36	2.32	NA	NA	2.36
+2010	21919	1318	2357	706	26301	26024	26320	2.36	2.32	NA	NA	2.36
+2011	22104	1304	2368	715	26491	NA	26110	2.36	2.31	2.19	2.54	NA
+2012	22305	1313	2387	724	26729	NA	26410	2.36	2.30	NA	NA	NA
+2013	22500	1322	2402	733	26956	NA	26840	2.35	2.30	NA	NA	NA
+2014	22718	1331	2420	741	27210	NA	26600	2.34	2.29	NA	NA	NA
+2015	22940	1340	2439	749	27468	NA	NA	2.34	NA	NA	NA	NA
+2016	23171	1349	2458	757	27735	NA	NA	2.33	NA	NA	NA	NA

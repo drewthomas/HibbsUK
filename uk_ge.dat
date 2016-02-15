@@ -1,0 +1,24 @@
+# UK general elections: dates, incumbents, and popular vote percentages
+#
+# https://en.wikipedia.org/wiki/List_of_United_Kingdom_general_elections
+# https://en.wikipedia.org/wiki/United_Kingdom_general_elections_overview
+#
+# DAY = date of election
+# INC = incumbent party
+# PVI = incumbent party's popular-vote share (%)
+# PVC = (most popular) challenger party's popular-vote share (%)
+DAY	INC	PVI	PVC
+"1964-10-15"	"CON"	43.4	44.1
+"1966-03-31"	"LAB"	48.0	41.9
+"1970-06-18"	"LAB"	43.1	46.4
+"1974-02-28"	"CON"	37.9	37.2
+"1974-10-10"	"LAB"	39.2	35.8
+"1979-05-03"	"LAB"	36.9	43.9
+"1983-06-09"	"CON"	42.4	27.6
+"1987-06-11"	"CON"	42.2	30.8
+"1992-04-09"	"CON"	41.9	34.4
+"1997-05-01"	"CON"	30.7	43.2
+"2001-06-07"	"LAB"	40.7	31.7
+"2005-05-05"	"LAB"	35.24	32.4
+"2010-05-06"	"LAB"	29.0	36.1
+"2015-05-07"	"CON"	36.9	30.4
