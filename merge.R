@@ -1,24 +1,24 @@
 # merge.R
 #
 # Read in raw data for household count & size (`h`), real household
-# disposable income (`rhdi`), general elections (`el`), UK military
+# disposable income (`rhdi`), general elections (`ge`), UK military
 # fatalities (`mf`), and UK population (`pop`), and mould them into usable
 # data frames.
 
 h <- read.table("uk_h.dat", header=TRUE)
 rhdi <- read.table("uk_rhdi.dat", header=TRUE)
-el <- read.table("uk_ge.dat", header=TRUE)
+ge <- read.table("uk_ge.dat", header=TRUE)
 mf <- read.table("uk_mf.dat", header=TRUE)
 pop <- read.table("uk_pop.dat", header=TRUE)
 
 # Compute the incumbent's share of the two-party popular vote in each
-# general election for which `el` has data. Then compute each election's
+# general election for which `ge` has data. Then compute each election's
 # year & quarter.
-el$PVI2 <- round(100 * el$PVI / (el$PVI + el$PVC), 2)
-el$DAY <- as.Date(el$DAY)
-el$YR <- as.integer(format(el$DAY, "%Y"))
-el$Q <- floor((as.numeric(format(el$DAY, "%m")) + 2) / 3)  # quarter
-el$Y <- el$YR + (as.integer(format(el$DAY, "%j")) / 365.25)
+ge$PVI2 <- round(100 * ge$PVI / (ge$PVI + ge$PVC), 2)
+ge$DAY <- as.Date(ge$DAY)
+ge$YR <- as.integer(format(ge$DAY, "%Y"))
+ge$Q <- floor((as.numeric(format(ge$DAY, "%m")) + 2) / 3)  # quarter
+ge$Y <- ge$YR + (as.integer(format(ge$DAY, "%j")) / 365.25)
 
 # Extrapolate the last few years of UK population estimates as far into the
 # future as the military-fatality counts go.
@@ -95,7 +95,7 @@ for (i in 1:length(fp$FTP)) {
 
 	# Was there an election this quarter? If so, did the incumbent party
 	# lose? If it did, reset the rolling FTP total for next quarter.
-	elec_this_q <- el[(el$YR == fp$YR[i]) & (el$Q == fp$Q[i]),]
+	elec_this_q <- ge[(ge$YR == fp$YR[i]) & (ge$Q == fp$Q[i]),]
 	if (nrow(elec_this_q)) {
 		if (elec_this_q$VIC != elec_this_q$INC) {
 			ftp_carryover <- 0
@@ -109,7 +109,7 @@ for (i in 1:length(fp$FTP)) {
 plot(fp$Y, fp$CFTP, type="l",
      xlab="year", ylab="cumulative military-fatalities-to-population ratio")
 grid()
-abline(v=el$Y, lty="dotted")
+abline(v=ge$Y, lty="dotted")
 
 # Fill in gaps in the household numbers from my favoured spreadsheet by
 # extrapolating from the England & Wales (and sometimes Scotland) numbers.
