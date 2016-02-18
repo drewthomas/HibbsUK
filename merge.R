@@ -22,7 +22,7 @@ ge$Y <- ge$YR + (as.integer(format(ge$DAY, "%j")) / 365.25)
 
 # Extrapolate the last few years of UK population estimates as far into the
 # future as the military-fatality counts go.
-pop <- pop[order(pop$POP),]  # force recent data to the bottom of `pop`
+pop <- pop[order(pop$YR),]  # force recent data to the bottom of `pop`
 if (max(pop$YR) < max(mf$YR)) {
 	pop_extrap <- data.frame(YR=seq(1+max(pop$YR), max(mf$YR)))
 	pop_extrap$POP <- predict(lm(POP ~ YR + I(YR^2), tail(pop, 9)),
@@ -232,7 +232,7 @@ for (i in 1:nrow(h)) {
 # Plot household-size averages after imputation.
 plo_s("imputed average household size")
 
-# Finally the `SUK` is a complete time series of (mostly imputed!) average
+# Finally `SUK` is a complete time series of (mostly imputed!) average
 # UK household size. Now return to the UK household number time series
 # and fill in the 1962-1970 gap.
 
@@ -256,10 +256,11 @@ rpdi$PIH[rpdi$Q == 2] <- h$PIH[h$YR %in% unique(rpdi$YR)]
 rpdi$PIH <- splinefun(rpdi$Y, rpdi$PIH)(rpdi$Y)
 plot(rpdi$Y, rpdi$PIH, type="l",
      xlab="year", ylab="people in households (millions)")
+lines(pop$Y, pop$POP, type="l", lty="dotted")
 grid(col="darkgrey")
 
-# Finally I can just divide the RHDI column by the PIH column in the `rpdi`
-# data frame to obtain the time series I originally hoped to find online:
+# Finally I can just divide the `RHDI` column by the `PIH` column in the
+# `rpdi` data frame to get the time series I originally hoped to find online:
 # quarterly real disposable income per person.
 rpdi$RPDI <- rpdi$RHDI / rpdi$PIH
 plot(rpdi$Y, rpdi$RPDI, type="l",
