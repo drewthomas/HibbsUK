@@ -1,0 +1,217 @@
+# UK military fatalities from 1960 onwards
+#
+# Top-level source for a partial list of relevant wars:
+# https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_Kingdom
+#
+# Sources for numbers on specific UK wars:
+# https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/369400/20141104_UK_Armed_Forces_Operational_deaths_post_World_War_II_O.pdf
+# https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/416476/20150319-uk-armed-forces-operational-deaths-post-WW2-tables-figures.xls
+# https://en.wikipedia.org/wiki/Military_intervention_against_ISIL
+# https://en.wikipedia.org/wiki/Operation_Shader
+#
+# I count only military deaths because Hibbs in his Oct. 2012 PS article
+# specifically mentions "the cumulative number of American military
+# fatalities per millions of US population over the presidential term",
+# not all (i.e. cilivian included) war deaths of Americans. Also, only US
+# military fatalities in "unprovoked, hostile deployments [...] in foreign
+# conflicts" count in Hibbs's model.
+#
+# YR = year
+# NAME = name of relevant war or military operation
+# NMF = absolute number of UK military fatalities in that year & conflict
+# U = 1 if UK deployment in the war was unprovoked, otherwise 0
+# F = 1 if UK deployment on foreign territory, otherwise 0
+# H = 1 if UK deployment was hostile, otherwise 0 (e.g. UN peacekeeping)
+YR	NAME	NMF	U	F	H
+1960	"Arab. Pen."	9	1	1	1	# Jebel Akhdar War?
+1960	"Congo"	0	1	1	0
+1961	"Congo"	2	1	1	0
+1962	"Borneo"	2	1	1	1
+1962	"Brunei"	7	1	1	1
+1962	"Congo"	0	1	1	0
+1963	"Borneo"	29	1	1	1
+1963	"Congo"	0	1	1	0
+1964	"Borneo"	43	1	1	1
+1964	"Congo"	0	1	1	0
+1964	"Malay Pen."	11	1	1	1
+1964	"Radfan"	13	1	1	1
+1964	"S Arabia"	14	1	1	1
+1965	"Borneo"	47	1	1	1
+1965	"Malay Pen."	19	1	1	1
+1965	"S Arabia"	34	1	1	1
+1966	"Borneo"	19	1	1	1
+1966	"Malay Pen."	9	1	1	1
+1966	"S Arabia"	38	1	1	1
+1967	"S Arabia"	74	1	1	1
+1969	"Dhofar"	0	1	1	1
+1969	"NI"	7	1	0	1
+1970	"Dhofar"	0	1	1	1
+1970	"NI"	12	1	0	1
+1971	"Dhofar"	6	1	1	1
+1971	"NI"	65	1	0	1
+1972	"Dhofar"	3	1	1	1
+1972	"NI"	170	1	0	1
+1973	"Dhofar"	3	1	1	1
+1973	"NI"	101	1	0	1
+1974	"Dhofar"	3	1	1	1
+1974	"NI"	84	1	0	1
+1975	"Dhofar"	10	1	1	1
+1975	"NI"	57	1	0	1
+1976	"Dhofar"	0	1	1	1
+1976	"NI"	64	1	0	1
+1977	"NI"	54	1	0	1
+1978	"NI"	49	1	0	1
+1979	"NI"	87	1	0	1
+1979	"Rhodesia"	3	1	1	1
+1980	"NI"	51	1	0	1
+1980	"Rhodesia"	2	1	1	1
+1981	"NI"	47	1	0	1
+1982	"Falklands"	237	0	0	1
+1982	"NI"	60	1	0	1
+1983	"NI"	44	1	0	1
+1984	"NI"	37	1	0	1
+1985	"NI"	16	1	0	1
+1986	"NI"	40	1	0	1
+1987	"NI"	40	1	0	1
+1988	"NI"	56	1	0	1
+1989	"NI"	55	1	0	1
+1990	"Gulf"	5	1	1	1
+1990	"NI"	40	1	0	1
+1991	"(Air Ops.) Iraq"	0	1	1	1
+1991	"Cambodia"	0	1	1	0
+1991	"Gulf"	40	1	1	1
+1991	"NI"	32	1	0	1
+1992	"(Air Ops.) Iraq"	0	1	1	1
+1992	"Balkans"	0	1	1	0	# includes UNOMIG contribution in Georgia
+1992	"Cambodia"	1	1	1	0
+1992	"NI"	35	1	0	1
+1993	"(Air Ops.) Iraq"	1	1	1	1
+1993	"Balkans"	2	1	1	0
+1993	"Cambodia"	0	1	1	0
+1993	"NI"	23	1	0	1
+1994	"(Air Ops.) Iraq"	0	1	1	1
+1994	"Balkans"	12	1	1	0
+1994	"NI"	18	1	0	1
+1995	"(Air Ops.) Iraq"	2	1	1	1
+1995	"Balkans"	12	1	1	0
+1995	"NI"	19	1	0	1
+1996	"(Air Ops.) Iraq"	0	1	1	1
+1996	"Balkans"	12	1	1	0
+1996	"NI"	9	1	0	1
+1997	"(Air Ops.) Iraq"	1	1	1	1
+1997	"Balkans"	4	1	1	0
+1997	"NI"	7	1	0	1
+1998	"(Air Ops.) Iraq"	1	1	1	1
+1998	"Balkans"	7	1	1	0
+1998	"NI"	14	1	0	1
+1999	"(Air Ops.) Iraq"	0	1	1	1
+1999	"Balkans"	9	1	1	0
+1999	"NI"	3	1	0	1
+2000	"(Air Ops.) Iraq"	0	1	1	1
+2000	"Balkans"	5	1	1	0
+2000	"NI"	9	1	0	1
+2000	"Sierra Leone"	1	1	1	1
+2001	"Afghanistan"	0	1	1	1
+2001	"(Air Ops.) Iraq"	0	1	1	1
+2001	"Balkans"	7	1	1	0
+2001	"NI"	7	1	0	1
+2001	"Sierra Leone"	1	1	1	1
+2002	"Afghanistan"	3	1	1	1
+2002	"(Air Ops.) Iraq"	0	1	1	1
+2002	"Balkans"	0	1	1	0
+2002	"NI"	6	1	0	1
+2002	"Sierra Leone"	3	1	1	1
+2003	"Afghanistan"	0	1	1	1
+2003	"(Air Ops.) Iraq"	0	1	1	1
+2003	"Balkans"	0	1	1	0
+2003	"Iraq"	52	1	1	1
+2003	"NI"	9	1	0	1
+2004	"Afghanistan"	1	1	1	1
+2004	"Balkans"	1	1	1	0
+2004	"Iraq"	22	1	1	1
+2004	"NI"	5	1	0	1
+2005	"Afghanistan"	1	1	1	1
+2005	"Balkans"	0	1	1	0
+2005	"Iraq"	23	1	1	1
+2005	"NI"	3	1	0	1
+2006	"Afghanistan"	39	1	1	1
+2006	"Balkans"	1	1	1	0
+2006	"Iraq"	29	1	1	1
+2006	"NI"	4	1	0	1
+2007	"Afghanistan"	42	1	1	1
+2007	"Balkans"	0	1	1	0
+2007	"Iraq"	47	1	1	1
+2007	"NI"	2	1	0	1
+2008	"Afghanistan"	51	1	1	1
+2008	"Balkans"	0	1	1	0
+2008	"Iraq"	4	1	1	1
+2009	"Afghanistan"	108	1	1	1
+2009	"Balkans"	0	1	1	0
+2009	"Iraq"	1	1	1	1
+2010	"Afghanistan"	103	1	1	1
+2010	"Balkans"	0	1	1	0
+2010	"Iraq"	0	1	1	1
+2011	"Afghanistan"	46	1	1	1
+2011	"Balkans"	0	1	1	0
+2011	"Iraq"	0	1	1	1
+2011	"Libya"	1	1	1	1	# albeit "Other causes", not "Hostile action"
+2012	"Afghanistan"	44	1	1	1
+2012	"Balkans"	0	1	1	0
+2013	"Afghanistan"	9	1	1	1
+2013	"Balkans"	0	1	1	0
+2014	"Afghanistan"	6	1	1	1
+2014	"Balkans"	0	1	1	0
+2014	"Shader"	0	0	1	1
+2015	"Balkans"	0	1	1	0
+2015	"Shader"	0	0	1	1	# 1 death, but of a Kurdish-army ex-marine
+1964	"Cyprus"	0	1	1	0
+1965	"Cyprus"	0	1	1	0
+1966	"Cyprus"	0	1	1	0
+1967	"Cyprus"	0	1	1	0
+1968	"Cyprus"	0	1	1	0
+1969	"Cyprus"	0	1	1	0
+1970	"Cyprus"	1	1	1	0
+1971	"Cyprus"	0	1	1	0
+1972	"Cyprus"	0	1	1	0
+1973	"Cyprus"	0	1	1	0
+1974	"Cyprus"	0	1	1	0
+1975	"Cyprus"	0	1	1	0
+1976	"Cyprus"	0	1	1	0
+1977	"Cyprus"	0	1	1	0
+1978	"Cyprus"	0	1	1	0
+1979	"Cyprus"	0	1	1	0
+1980	"Cyprus"	0	1	1	0
+1981	"Cyprus"	0	1	1	0
+1982	"Cyprus"	0	1	1	0
+1983	"Cyprus"	0	1	1	0
+1984	"Cyprus"	0	1	1	0
+1985	"Cyprus"	0	1	1	0
+1986	"Cyprus"	0	1	1	0
+1987	"Cyprus"	0	1	1	0
+1988	"Cyprus"	0	1	1	0
+1989	"Cyprus"	0	1	1	0
+1990	"Cyprus"	0	1	1	0
+1991	"Cyprus"	1	1	1	0
+1992	"Cyprus"	0	1	1	0
+1993	"Cyprus"	0	1	1	0
+1994	"Cyprus"	0	1	1	0
+1995	"Cyprus"	0	1	1	0
+1996	"Cyprus"	0	1	1	0
+1997	"Cyprus"	0	1	1	0
+1998	"Cyprus"	0	1	1	0
+1999	"Cyprus"	0	1	1	0
+2000	"Cyprus"	0	1	1	0
+2001	"Cyprus"	0	1	1	0
+2002	"Cyprus"	0	1	1	0
+2003	"Cyprus"	0	1	1	0
+2004	"Cyprus"	0	1	1	0
+2005	"Cyprus"	0	1	1	0
+2006	"Cyprus"	0	1	1	0
+2007	"Cyprus"	0	1	1	0
+2008	"Cyprus"	0	1	1	0
+2009	"Cyprus"	0	1	1	0
+2010	"Cyprus"	0	1	1	0
+2011	"Cyprus"	1	1	1	0
+2012	"Cyprus"	0	1	1	0
+2013	"Cyprus"	0	1	1	0
+2014	"Cyprus"	0	1	1	0
