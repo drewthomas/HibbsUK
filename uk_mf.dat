@@ -6,6 +6,7 @@
 # Sources for numbers on specific UK wars:
 # https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/369400/20141104_UK_Armed_Forces_Operational_deaths_post_World_War_II_O.pdf
 # https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/416476/20150319-uk-armed-forces-operational-deaths-post-WW2-tables-figures.xls
+# https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/512075/20160331_UK_Armed_Forces_Operational_deaths_post_World_War_II_Tables_and_Figures_O.xlsx
 # https://en.wikipedia.org/wiki/Military_intervention_against_ISIL
 # https://en.wikipedia.org/wiki/Operation_Shader
 #
@@ -162,6 +163,7 @@ YR	NAME	NMF	U	F	H
 2014	"Afghanistan"	6	1	1	1
 2014	"Balkans"	0	1	1	0
 2014	"Shader"	0	0	1	1
+2015	"Afghanistan"	3	1	1	1
 2015	"Balkans"	0	1	1	0
 2015	"Shader"	0	0	1	1	# 1 death, but of a Kurdish-army ex-marine
 1964	"Cyprus"	0	1	1	0
@@ -215,3 +217,4 @@ YR	NAME	NMF	U	F	H
 2012	"Cyprus"	0	1	1	0
 2013	"Cyprus"	0	1	1	0
 2014	"Cyprus"	0	1	1	0
+2015	"Cyprus"	1	1	1	0

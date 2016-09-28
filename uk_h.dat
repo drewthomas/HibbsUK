@@ -18,13 +18,13 @@
 # Notice that there aren't any quarterly figures on this. The key source of
 # data here basically seems to be census data, so presumably no one bothers
 # to interpolate quarterly since a decadal census has such poor temporal
-# resolution. Even nowadays (Feb. 2016) only England & Wales maintain
+# resolution. Even as of Feb. 2016 only England & Wales maintained
 # separate annual mean-household-size time series!
 #
 # YR: year
 # NE: no. of English households in thousands [1]
 # NW: no. of Welsh households in thousands [1]
-# NS: no. of Scottish households in thousands [2]
+# NS: no. of Scottish households in thousands [1]
 # NNI: no. of Northern Irish households in thousands [2]
 # NUK1: no. of UK households in thousands [1]
 # NUK2: no. of UK households in thousands [2]
@@ -73,12 +73,12 @@ YR	NE	NW	NS	NNI	NUK1	NUK2	NUK3	SE	SW	SS	SNI	SUK
 2005	21064	1257	2271	NA	NA	25125	24800	2.36	NA	NA	NA	2.36
 2006	21221	1269	2291	NA	NA	25258	25115	2.36	2.34	NA	NA	2.37
 2007	21382	1283	2314	NA	NA	25462	25350	2.36	2.33	NA	NA	2.36
-2008	21568	1296	2332	689	25885	25688	25690	2.36	2.33	NA	NA	2.36
-2009	21736	1308	2345	697	26086	25837	25980	2.36	2.32	NA	NA	2.36
-2010	21919	1318	2357	706	26301	26024	26320	2.36	2.32	NA	NA	2.36
-2011	22104	1304	2368	715	26491	NA	26110	2.36	2.31	2.19	2.54	NA
-2012	22305	1313	2387	724	26729	NA	26410	2.36	2.30	NA	NA	NA
-2013	22500	1322	2402	733	26956	NA	26840	2.35	2.30	NA	NA	NA
-2014	22718	1331	2420	741	27210	NA	26600	2.34	2.29	NA	NA	NA
-2015	22940	1340	2439	749	27468	NA	NA	2.34	NA	NA	NA	NA
-2016	23171	1349	2458	757	27735	NA	NA	2.33	NA	NA	NA	NA
+2008	21568	1296	2332	689	NA	25688	25690	2.36	2.33	NA	NA	2.36
+2009	21736	1308	2345	697	NA	25837	25980	2.36	2.32	NA	NA	2.36
+2010	21919	1318	2357	706	NA	26024	26320	2.36	2.32	NA	NA	2.36
+2011	22104	1304	2368	715	NA	NA	26110	2.36	2.31	2.19	2.54	NA
+2012	22306	1313	2387	724	26714	NA	26410	2.36	2.30	NA	NA	NA
+2013	22508	1322	2402	733	26944	NA	26840	2.35	2.30	NA	NA	NA
+2014	22746	1331	2420	741	27214	NA	26600	2.35	2.29	NA	NA	NA
+2015	22984	1340	2439	749	27484	NA	NA	2.34	NA	NA	NA	NA
+2016	23229	1349	2458	757	27762	NA	NA	2.34	NA	NA	NA	NA

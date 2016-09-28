@@ -1,4 +1,4 @@
-uk_rpdi.dat: uk_rhdi.dat merge.R
+uk_rpdi.dat: uk_rhdi.dat uk_h.dat merge.R
 	R -q --vanilla < merge.R
 
 uk_rhdi.dat: UKEA_CSDB_DS.csdb.csv Makefile
