@@ -1,7 +1,7 @@
 NRJR 	HN: Real households disposable income: CVM SA £m
-as of 2016-09-28:
-http://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/nrjr/ukea
-http://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/nrjr/ukea
+as of 2017-04-18:
+https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/nrjr/ukea
+https://www.ons.gov.uk/generator?format=csv&uri=/economy/grossdomesticproductgdp/timeseries/nrjr/ukea
 originally:
 http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=NRJR&dataset=ukea&table-id=XS1
 http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=ukea&cdid=NRJR
