@@ -1,4 +1,4 @@
-# UK military fatalities from 1960 onwards
+# UK military fatalities from 1955 onwards
 #
 # Top-level source for a partial list of relevant wars:
 # https://en.wikipedia.org/wiki/List_of_wars_involving_the_United_Kingdom
@@ -9,6 +9,7 @@
 # https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/512075/20160331_UK_Armed_Forces_Operational_deaths_post_World_War_II_Tables_and_Figures_O.xlsx
 # https://en.wikipedia.org/wiki/Military_intervention_against_ISIL
 # https://en.wikipedia.org/wiki/Operation_Shader
+# https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/603235/20170330_UK_Armed_Forces_Operational_deaths_post_World_War_II_Tables_and_Figures_O.xlsx
 #
 # I count only military deaths because Hibbs in his Oct. 2012 PS article
 # specifically mentions "the cumulative number of American military
@@ -24,8 +25,25 @@
 # F = 1 if UK deployment on foreign territory, otherwise 0
 # H = 1 if UK deployment was hostile, otherwise 0 (e.g. UN peacekeeping)
 YR	NAME	NMF	U	F	H
-1960	"Arab. Pen."	9	1	1	1	# Jebel Akhdar War?
+1955	"Cyprus"	35	1	1	1
+1955	"Kenya"	21	1	1	1
+1955	"Malaya"	89	1	1	1
+1956	"Cyprus"	173	1	1	1
+1956	"Kenya"	8	1	1	1
+1956	"Malaya"	101	1	1	1
+1956	"Suez"	24	1	1	1
+1957	"Arab. Pen."	10	1	1	1	# Jebel Akhdar War?
+1957	"Cyprus"	57	1	1	1
+1957	"Malaya"	60	1	1	1
+1958	"Arab. Pen."	28	1	1	1
+1958	"Cyprus"	83	1	1	1
+1958	"Malaya"	50	1	1	1
+1959	"Arab. Pen."	13	1	1	1
+1959	"Cyprus"	10	1	1	1
+1959	"Malaya"	44	1	1	1
+1960	"Arab. Pen."	9	1	1	1
 1960	"Congo"	0	1	1	0
+1960	"Malaya"	30	1	1	1
 1961	"Congo"	2	1	1	0
 1962	"Borneo"	2	1	1	1
 1962	"Brunei"	7	1	1	1
@@ -166,55 +184,59 @@ YR	NAME	NMF	U	F	H
 2015	"Afghanistan"	3	1	1	1
 2015	"Balkans"	0	1	1	0
 2015	"Shader"	0	0	1	1	# 1 death, but of a Kurdish-army ex-marine
-1964	"Cyprus"	0	1	1	0
-1965	"Cyprus"	0	1	1	0
-1966	"Cyprus"	0	1	1	0
-1967	"Cyprus"	0	1	1	0
-1968	"Cyprus"	0	1	1	0
-1969	"Cyprus"	0	1	1	0
-1970	"Cyprus"	1	1	1	0
-1971	"Cyprus"	0	1	1	0
-1972	"Cyprus"	0	1	1	0
-1973	"Cyprus"	0	1	1	0
-1974	"Cyprus"	0	1	1	0
-1975	"Cyprus"	0	1	1	0
-1976	"Cyprus"	0	1	1	0
-1977	"Cyprus"	0	1	1	0
-1978	"Cyprus"	0	1	1	0
-1979	"Cyprus"	0	1	1	0
-1980	"Cyprus"	0	1	1	0
-1981	"Cyprus"	0	1	1	0
-1982	"Cyprus"	0	1	1	0
-1983	"Cyprus"	0	1	1	0
-1984	"Cyprus"	0	1	1	0
-1985	"Cyprus"	0	1	1	0
-1986	"Cyprus"	0	1	1	0
-1987	"Cyprus"	0	1	1	0
-1988	"Cyprus"	0	1	1	0
-1989	"Cyprus"	0	1	1	0
-1990	"Cyprus"	0	1	1	0
-1991	"Cyprus"	1	1	1	0
-1992	"Cyprus"	0	1	1	0
-1993	"Cyprus"	0	1	1	0
-1994	"Cyprus"	0	1	1	0
-1995	"Cyprus"	0	1	1	0
-1996	"Cyprus"	0	1	1	0
-1997	"Cyprus"	0	1	1	0
-1998	"Cyprus"	0	1	1	0
-1999	"Cyprus"	0	1	1	0
-2000	"Cyprus"	0	1	1	0
-2001	"Cyprus"	0	1	1	0
-2002	"Cyprus"	0	1	1	0
-2003	"Cyprus"	0	1	1	0
-2004	"Cyprus"	0	1	1	0
-2005	"Cyprus"	0	1	1	0
-2006	"Cyprus"	0	1	1	0
-2007	"Cyprus"	0	1	1	0
-2008	"Cyprus"	0	1	1	0
-2009	"Cyprus"	0	1	1	0
-2010	"Cyprus"	0	1	1	0
-2011	"Cyprus"	1	1	1	0
-2012	"Cyprus"	0	1	1	0
-2013	"Cyprus"	0	1	1	0
-2014	"Cyprus"	0	1	1	0
-2015	"Cyprus"	1	1	1	0
+2016	"Afghanistan"	0	1	1	1
+2016	"Balkans"	0	1	1	0
+2016	"Shader"	0	0	1	1	# only unofficial-volunteer deaths reported
+1964	"UNFICYP"	0	1	1	0
+1965	"UNFICYP"	0	1	1	0
+1966	"UNFICYP"	0	1	1	0
+1967	"UNFICYP"	0	1	1	0
+1968	"UNFICYP"	0	1	1	0
+1969	"UNFICYP"	0	1	1	0
+1970	"UNFICYP"	1	1	1	0
+1971	"UNFICYP"	0	1	1	0
+1972	"UNFICYP"	0	1	1	0
+1973	"UNFICYP"	0	1	1	0
+1974	"UNFICYP"	0	1	1	0
+1975	"UNFICYP"	0	1	1	0
+1976	"UNFICYP"	0	1	1	0
+1977	"UNFICYP"	0	1	1	0
+1978	"UNFICYP"	0	1	1	0
+1979	"UNFICYP"	0	1	1	0
+1980	"UNFICYP"	0	1	1	0
+1981	"UNFICYP"	0	1	1	0
+1982	"UNFICYP"	0	1	1	0
+1983	"UNFICYP"	0	1	1	0
+1984	"UNFICYP"	0	1	1	0
+1985	"UNFICYP"	0	1	1	0
+1986	"UNFICYP"	0	1	1	0
+1987	"UNFICYP"	0	1	1	0
+1988	"UNFICYP"	0	1	1	0
+1989	"UNFICYP"	0	1	1	0
+1990	"UNFICYP"	0	1	1	0
+1991	"UNFICYP"	1	1	1	0
+1992	"UNFICYP"	0	1	1	0
+1993	"UNFICYP"	0	1	1	0
+1994	"UNFICYP"	0	1	1	0
+1995	"UNFICYP"	0	1	1	0
+1996	"UNFICYP"	0	1	1	0
+1997	"UNFICYP"	0	1	1	0
+1998	"UNFICYP"	0	1	1	0
+1999	"UNFICYP"	0	1	1	0
+2000	"UNFICYP"	0	1	1	0
+2001	"UNFICYP"	0	1	1	0
+2002	"UNFICYP"	0	1	1	0
+2003	"UNFICYP"	0	1	1	0
+2004	"UNFICYP"	0	1	1	0
+2005	"UNFICYP"	0	1	1	0
+2006	"UNFICYP"	0	1	1	0
+2007	"UNFICYP"	0	1	1	0
+2008	"UNFICYP"	0	1	1	0
+2009	"UNFICYP"	0	1	1	0
+2010	"UNFICYP"	0	1	1	0
+2011	"UNFICYP"	1	1	1	0
+2012	"UNFICYP"	0	1	1	0
+2013	"UNFICYP"	0	1	1	0
+2014	"UNFICYP"	0	1	1	0
+2015	"UNFICYP"	1	1	1	0
+2016	"UNFICYP"	0	1	1	0

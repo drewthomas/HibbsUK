@@ -67,7 +67,7 @@ par(las=1, mar=c(4.5, 4.1, 0.2, 0.2), mfrow=c(2,1))
 # analogous fatalities-to-population time series for all conflicts in the
 # original data set (even those not counted by Hibbs's model).
 plot(fp$Y, fp$FTP, type="l",
-     xlab="year", ylab="relevant military fatalities per million population")
+     xlab="year", ylab="relevant military fatalities per million popul.")
 fp_all_conflicts <- aggregate(NMF ~ YR, mf, sum)
 fp_all_conflicts$NMF <- 0.25 * fp_all_conflicts$NMF / pop$POP
 fp_all_conflicts$YR <- fp_all_conflicts$YR + 0.4
@@ -79,8 +79,9 @@ for (conflict_name in unique(mfs$NAME)) {
 	                            & (mfss$NMF == max(mfss$NMF)),]
 	conflict_biggest_yr <- conflict_biggest_yr[1,]
 	text(0.5 + conflict_biggest_yr$YR,
-	     0.23 * conflict_biggest_yr$NMF / mean(fp$POP),
-	     conflict_name, cex=max(0.4, sqrt(conflict_biggest_yr$NMF) / 6))
+	     0.33 * conflict_biggest_yr$NMF / mean(fp$POP),
+	     conflict_name, cex=max(0.4, sqrt(conflict_biggest_yr$NMF) / 6),
+	     srt=-8)
 }
 
 # Let's try working out the cumulative quarterly fatalities-to-population
@@ -107,7 +108,7 @@ for (i in 1:length(fp$FTP)) {
 # Plot the cumulative fatalities time series against time.
 
 plot(fp$Y, fp$CFTP, type="l",
-     xlab="year", ylab="cumulative military-fatalities-to-population ratio")
+     xlab="year", ylab="cumulative military-fatalities-to-popul. ratio")
 grid()
 abline(v=ge$Y, lty="dotted")
 
@@ -150,7 +151,7 @@ for (i in 1:nrow(h)) {
 plo_s <- function(y_lab="average household size")
 {
 	co <- "#00000070"
-	plot(h$YR, h$SE, type="b", ylim=c(2.2, 3.8), col=co,
+	plot(h$YR, h$SE, type="b", ylim=c(2.1, 4.0), col=co,
 	     xlab="year", ylab=y_lab)
 	points(h$YR[!is.na(h$SW)], h$SW[!is.na(h$SW)], type="b",
 	       pch=2, col=co)
@@ -162,11 +163,11 @@ plo_s <- function(y_lab="average household size")
 	for (col_name in c("SE", "SW", "SS", "SNI", "SUK")) {
 		x <- min(h$YR[!is.na(h[[col_name]])])
 		if (!(col_name %in% c("SUK", "SW"))) {
-			text(x, 0.07 + (h[[col_name]])[h$YR == x], col_name)
+			text(x, 0.08 + (h[[col_name]])[h$YR == x], col_name)
 		} else if (col_name == "SW") {
-			text(1991, 0.08 + (h[["SW"]])[h$YR == 1991], "SW")
+			text(1991, 0.1 + (h[["SW"]])[h$YR == 1991], "SW")
 		} else {
-			text(2001, 0.08 + (h[["SUK"]])[h$YR == 2001], "SUK")
+			text(2001, 0.11 + (h[["SUK"]])[h$YR == 2001], "SUK")
 		}
 	}
 }
@@ -181,9 +182,9 @@ plo_s()
 # 2. Make the hopeful assumption that the gap between Welsh & English average
 #    household sizes was constant before 1991, imputing Welsh AHS backwards
 #    decadally from that.
-# 3. Wedge the years 1962 through 1970 into `h` by copying rows and blanking
-#    them, then linearly interpolate an annual time series for each country
-#    in the UK for 1961 onwards.
+# 3. Wedge the years 1952 through 1960 and 1962 through 1970 into `h` by
+#    copying rows and blanking them, then linearly interpolate an annual time
+#    series for each country in the UK from 1951 onwards.
 # 4. Now extrapolate averages for NI, Scotland, & Wales by extending the
 #    straight best-fit line to the 2001-2016 data through that whole period.
 # 5. Turn to household counts, which are a prerequisite for recomputing
@@ -200,9 +201,9 @@ h$SW[(h$YR < 1991) & ((h$YR %% 10) == 1)] <-
 	h$SE[(h$YR < 1991) & ((h$YR %% 10) == 1)] +
 	(h$SW[h$YR == 1991] - h$SE[h$YR == 1991])
 
-h <- rbind(head(h, 9), h)
-h[1:9,] <- NA
-h$YR[1:9] <- 1962:1970
+h <- rbind(h[1,], head(h, 9), h[2,], head(h, 9), h[3:nrow(h),])
+h[c(2:10, 12:20),] <- NA
+h$YR[c(2:10, 12:20)] <- c(1952:1960, 1962:1970)
 h <- h[order(h$YR),]
 for (col_name in c("SE", "SW", "SS", "SNI")) {
 	h[[col_name]] <- approxfun(h$YR, h[[col_name]])(h$YR)
@@ -269,7 +270,7 @@ grid(col="darkgrey")
 
 # But Hibbs's model is of course dependent on changes in the logarithm of
 # the RDI per person, multiplied by 400 (to make it "the quarter-to-quarter
-# log-percentage change expressed at annual rates". So work that out.
+# log-percentage change expressed at annual rates"). So work that out.
 # Let's call it delta ln R.
 rpdi$DLR <- c(NA, 400 * diff(log(rpdi$RPDI)))
 

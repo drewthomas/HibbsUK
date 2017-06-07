@@ -7,13 +7,27 @@
 # [3] http://www.ons.gov.uk/ons/rel/family-spending/family-spending/2015-edition/rft-a44.xls
 # [4] http://www.scotlandscensus.gov.uk/documents/censusresults/release1b/rel1bfig15.csv
 # [5] https://statswales.wales.gov.uk/Catalogue/Housing/Households/Estimates/AverageHouseholdSize-by-LocalAuthority-Year
-# [6] http://www.nisra.gov.uk/archive/demography/population/household/household_project.pdf
+# [6] https://www.nrscotland.gov.uk/files/statistics/old/php-sem-05-review-house-proj-sco-ni-pt2.pdf
 # [7] http://www.ninis2.nisra.gov.uk/public/PivotGrid.aspx?ds=4246&lh=73&yn=2011&sk=136&sn=Census%202011&yearfilter=2037
 #
 # A seemingly useful source for UK & Welsh mean household size was
 # 	[8] https://books.google.co.uk/books?id=2C4tAAAAMAAJ&q=Wales+"household+size"+1981&dq=Wales+"household+size"+1981&hl=en&sa=X [K. D. George & Lynn Mainwaring [eds.], The Welsh Economy, University of Wales Press, 1988, p.57]
 # which gives 2.72 & 2.75 as the UK & Welsh 1981 means respectively.
 # But it doesn't mesh with the other statistics, so I leave it out.
+#
+# For England, Scotland, & Wales in 1951 I supplement the above with the
+# following pages on Vision of Britain, which claim to derive from the
+# 1951 E&W and Scotland censuses (and roughly match Alan E. Holman's 1951
+# data in his 2005 report "Historical Statistics of Housing in Britain").
+# Although these census tables apparently don't explicitly state average
+# household sizes, one can compute those averages by dividing the total
+# population in households by the household counts.
+#
+# [9] http://www.visionofbritain.org.uk/census/table/EW1951COU_M3
+# [10] http://www.visionofbritain.org.uk/census/table/S1951COU_M1
+# [11] http://www.visionofbritain.org.uk/census/table/EW1951COU_M12
+# [12] http://www.visionofbritain.org.uk/census/table/S1951COU_M21
+# [13] http://www.visionofbritain.org.uk/census/table/EW1961COU_M3
 #
 # Notice that there aren't any quarterly figures on this. The key source of
 # data here basically seems to be census data, so presumably no one bothers
@@ -22,20 +36,21 @@
 # separate annual mean-household-size time series!
 #
 # YR: year
-# NE: no. of English households in thousands [1]
-# NW: no. of Welsh households in thousands [1]
-# NS: no. of Scottish households in thousands [1]
-# NNI: no. of Northern Irish households in thousands [2]
+# NE: no. of English households in thousands [9, 1]
+# NW: no. of Welsh households in thousands [9, 1]
+# NS: no. of Scottish households in thousands [10, 1]
+# NNI: no. of Northern Irish households in thousands [6, 2]
 # NUK1: no. of UK households in thousands [1]
 # NUK2: no. of UK households in thousands [2]
 # NUK3: no. of UK households in thousands [3]
-# SE: average English household size [1]
-# SW: average Welsh household size [5]
-# SS: average Scottish household size [4]
+# SE: average English household size [11, 1]
+# SW: average Welsh household size [11, 13, 5]
+# SS: average Scottish household size [10, 12, 4]
 # SNI: average Northern Irish household size [6, 7]
 # SUK: average UK household size [2]
 YR	NE	NW	NS	NNI	NUK1	NUK2	NUK3	SE	SW	SS	SNI	SUK
-1961	13915	785	1570	353	16623	NA	NA	3.01	NA	3.19	3.70	NA
+1951	12369	751	1389	338	NA	NA	NA	3.18	3.34	3.50	3.91	NA
+1961	13915	785	1570	353	16623	NA	NA	3.01	3.14	3.19	3.70	NA
 1971	16012	928	1686	389	19015	NA	NA	2.84	NA	3.00	3.49	NA
 1972	16107	931	NA	NA	NA	NA	NA	2.85	NA	NA	NA	NA
 1973	16251	943	NA	NA	NA	NA	NA	2.83	NA	NA	NA	NA
@@ -76,7 +91,7 @@ YR	NE	NW	NS	NNI	NUK1	NUK2	NUK3	SE	SW	SS	SNI	SUK
 2008	21568	1296	2332	689	NA	25688	25690	2.36	2.33	NA	NA	2.36
 2009	21736	1308	2345	697	NA	25837	25980	2.36	2.32	NA	NA	2.36
 2010	21919	1318	2357	706	NA	26024	26320	2.36	2.32	NA	NA	2.36
-2011	22104	1304	2368	715	NA	NA	26110	2.36	2.31	2.19	2.54	NA
+2011	22104	1304	2368	715	NA	NA	26110	2.36	2.31	2.19	2.49	NA
 2012	22306	1313	2387	724	26714	NA	26410	2.36	2.30	NA	NA	NA
 2013	22508	1322	2402	733	26944	NA	26840	2.35	2.30	NA	NA	NA
 2014	22746	1331	2420	741	27214	NA	26600	2.35	2.29	NA	NA	NA

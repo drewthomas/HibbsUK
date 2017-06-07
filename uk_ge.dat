@@ -9,6 +9,8 @@
 # PVC = (most popular) challenger party's popular-vote share (%)
 # VIC = victorious party (i.e. party of the resulting Prime Minister)
 DAY	INC	PVI	PVC	VIC
+"1951-10-25"	"LAB"	44.3	48.8	"CON"
+"1955-05-26"	"CON"	49.7	46.4	"CON"
 "1959-10-08"	"CON"	49.4	43.4	"CON"
 "1964-10-15"	"CON"	43.4	44.1	"LAB"
 "1966-03-31"	"LAB"	48.0	41.9	"LAB"
